@@ -7,9 +7,10 @@
 </template>
 
 <script>
-import Accueil from './views/Accueil'
+import Accueil from './views/Accueil';
 import Header from './components/Header';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+
 
 
 export default {
@@ -19,6 +20,7 @@ export default {
     Accueil,
     Header,
     Footer,
+    
   
   }
 }
