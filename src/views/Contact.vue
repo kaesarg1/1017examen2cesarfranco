@@ -15,6 +15,7 @@
       <select name="categorie" class="form-control">
         <option v-for="(categorie, i) in categories" :key="i">{{categorie}}</option>
     </select>
+    <br>
       <button class="button">Submit</button>
     </form>
   </div>
@@ -24,7 +25,7 @@
 
 export default {
 
-  name: 'Contact',
+  name: 'contact',
   data() {
       return {
           categories: [
@@ -39,7 +40,7 @@ export default {
 
 <style scoped>
 .container {
-  max-width: 150px;
+  max-width: 250px;
   margin: auto;
   
 }

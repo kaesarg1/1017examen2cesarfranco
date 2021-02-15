@@ -10,7 +10,7 @@
 <script>
 
 export default {
-  name: 'Projet',
+  name: 'projet',
   data() {
     return {
       projets: [
@@ -25,6 +25,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .projet {
+  max-width: 250px;
+  margin: auto;
+  text-justify: center;
+}
 </style>
+

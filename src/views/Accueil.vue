@@ -44,7 +44,7 @@
 <script>
 
 export default {
-  name: 'Accueil',
+  name: 'accueil',
  data() {
         return {
             loadProfile: true,
