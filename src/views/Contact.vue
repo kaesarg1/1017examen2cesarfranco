@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import { MixinTranslate } from '@/mixins/MixinTranslate.js'
+// import { MixinTranslate } from "@/mixins/MixinTranslate.js"
 
 export default {
-  mixins: [MixinTranslate],
+  // mixins: [MixinTranslate],
   name: 'contact',
   data() {
       return {

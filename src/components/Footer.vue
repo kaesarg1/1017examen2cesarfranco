@@ -1,6 +1,10 @@
 <template>
-    <div class="footer">
-        <h1>Footer</h1>
+    <div class="footer container-flex bg-light">
+        <div class="footer-copyright text-center">
+          <p class="text-align-center">
+            Copyright &copy; {{ getYearDate }} - Cesar Franco - All Rights Reserved
+          </p>
+        </div>
     </div>
 </template>
 
@@ -8,11 +12,23 @@
 
 export default {
   name: 'Footer',
+  computed: {
+    getYearDate: function() {
+      const date = new Date();
+      return date.getFullYear();
+    },
+  },
 
 
 }
 </script>
 
-<style>
-
+<style scoped>
+  .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
 </style>
