@@ -4,7 +4,7 @@
       <span class="navbar-brand">Cesar Franco - Examen 2</span>
         <ul class="navbar-nav list-group list-group-horizontal">
           <li class="nav-item" v-for="menu in menuItems" :key="menu.id">
-            <router-link :to="{path:menu.name}" class="nav-link p-5 h2">{{menu.name}}</router-link>
+            <router-link :to="{path:menu.name}" class="nav-link p-5 h2">{{menu.name | translate }}</router-link>
           </li>
         </ul>
     </nav>
@@ -13,9 +13,12 @@
 </template>
 
 <script>
+import { MixinTranslate } from "@/mixins/MixinTranslate.js"
 
 export default {
+  mixins: [MixinTranslate],
   name: 'Header',
+  
   data() {
       return {
         menuItems: [
