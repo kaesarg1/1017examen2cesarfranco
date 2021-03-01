@@ -2,7 +2,7 @@
     <div class="projet">
         <h2>{{ 'myProjects' | translate }}</h2>
         <ul>
-            <li v-for="(projet, i) in projets" :key="i">{{ 'myProjects' | translate }}</li>
+            <li v-for="(projet, i) in projets" :key="i">{{ projets | translate }}</li>
         </ul>
     </div>
 </template>

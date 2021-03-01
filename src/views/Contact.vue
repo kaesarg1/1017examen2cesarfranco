@@ -1,17 +1,17 @@
 <template>
   <div class="container">
     <form>
-      <!-- nom -->
-      <label for="nom"> {{'nom' | translate }}</label>
+
+      <label for="nom"> {{'nom' | translate }}</label>      <!-- nom -->
       <input type="text" name="nom" />
-      <!-- prénom -->
-      <label for="prenom">{{'prenom' | translate }} :</label>
+ 
+      <label for="prenom">{{'prenom' | translate }} :</label>     <!-- prénom -->
       <input type="text" name="prenom" />
-      <!-- email -->
-      <label for="email">{{ 'Email' | translate }}:</label>
+
+      <label for="email">{{ 'Email' | translate }}:</label>      <!-- email -->
       <input type="text" name="email" />
-      <!-- dropdown -->
-      <label for="cateorie">{{ categorie | translate }}:</label>
+
+      <label for="categorie">{{ categorie | translate }}:</label>      <!-- dropdown -->
       <select name="categorie" class="form-control">
         <option v-for="(categorie, i) in categories" :key="i"> {{ categorie | translate }}</option>
     </select>

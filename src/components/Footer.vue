@@ -2,7 +2,7 @@
     <div class="footer container-flex bg-light">
         <div class="footer-copyright text-center">
           <p class="text-align-center">
-            Copyright &copy; {{ getYearDate }} - Cesar Franco - All Rights Reserved
+            Copyright &copy; {{ getYearDate }} - Cesar Franco - All Rights Reserved<!-- Copyright -->
           </p>
         </div>
     </div>

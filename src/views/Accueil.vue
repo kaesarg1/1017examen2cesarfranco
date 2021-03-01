@@ -4,7 +4,7 @@
           <h1 class="h1">
             <span v-if="loadProfile">César Franco</span>
           </h1>
-          <p v-if="!loadProfile">
+          <p v-if="!loadProfile"><!-- infoProfile loadProfile=false -->
             Profil: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -13,19 +13,19 @@
             occaecat cupidatat non proident, sunt in culpa qui officia deserunt
             mollit anim id est laborum.
           </p>
-          <div v-if="loadProfile" class="infoprofile">
+          <div v-if="loadProfile" class="infoprofile"><!-- infoProfile loadProfile=true -->
               <p>Formation: AEC Développement Web Front-end, Cégep de Trois-Rivières</p>
               <p>Langages: HTML, Javascript, CSS, PHP, SQL, Typescript</p>
               <p>Autres connaissances: Vidéographie et montage vidéo</p>
           </div>
         </div>
-        <div class="content img">
+        <div class="content img"><!-- img loadProfile=true -->
           <img
             class="resize"
             src="https://wallpapercave.com/wp/wp6350571.jpg"
           />
         </div>
-        <div class="content">
+        <div class="content"><!-- infoProfile loadProfile=true -->
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
