@@ -13,10 +13,10 @@
 </template>
 
 <script>
-// import { MixinTranslate } from "@/mixins/MixinTranslate.js"
+import { MixinTranslate } from "../mixins/MixinTranslate" //MixinTranslate
 
 export default {
-  // mixins: [MixinTranslate],
+  mixins: [MixinTranslate],
   name: 'Header',
   
   data() {

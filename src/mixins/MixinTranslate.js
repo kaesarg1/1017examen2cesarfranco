@@ -1,7 +1,12 @@
-const TRASLATIONS = {
+export const TRASLATIONS  = {
+    data () {
+        return {
+            /* Choix de la langue */
+            lang: "french"
+        }
+    },
+
     en: {
-
-
 
         accueil: "Home",
         projets: "Projects",

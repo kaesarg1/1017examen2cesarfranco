@@ -1,17 +1,17 @@
 <template>
-    <div class="projet">
-        <h2>{{ 'myProjects' | translate }}</h2>
+    <div class="projets">
+        <h2>{{ 'Projects' | translate }}</h2>
         <ul>
-            <li v-for="(projet, i) in projets" :key="i">{{ projets | translate }}</li>
+            <li v-for="projets in projets" :key="projets">{{projets }}</li>
         </ul>
     </div>
 </template>
 
 <script>
-// import { MixinTranslate } from "@/mixins/MixinTranslate.js"
+import { MixinTranslate } from "../mixins/MixinTranslate" //MixinTranslate
 
 export default {
-  // mixins: [MixinTranslate],
+  mixins: [MixinTranslate],
   name: 'projet',
   data() {
     return {
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style scoped>
-  .projet {
+  .projets {
   max-width: 250px;
   margin: auto;
   text-justify: center;
