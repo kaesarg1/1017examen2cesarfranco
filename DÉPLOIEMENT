@@ -1,0 +1,17 @@
+1. copier le nom de votre <repo>.
+2. Sur votre fichier vue.config.js, ajouter:
+      module.exports = {
+        publicPath: '/name-of-your-project/'
+      }
+3. commit et push (ATTENTION! si vous ne le faites pas, vous allez perdre tous les changements)
+4. Maintenant, sur terminal:
+
+        git checkout --orphan gh-pages 
+        npm run build
+        git --work-tree dist add --all 
+        git --work-tree dist commit -m 'Deploy' 
+        git push origin HEAD:gh-pages --force
+        rm -r dist 
+        git checkout -f master (où sur la branche sur laquelle vous avez votre projet)
+        git branch -D gh-pages
+5. Attendez quelques minutes et voila votre github page déployé
