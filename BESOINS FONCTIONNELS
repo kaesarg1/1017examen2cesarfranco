@@ -1,0 +1,8 @@
+BESOINS FONCTIONNELS
+Dans notre projet, nous allons trouver un component header qui comprend un navbar avec des éléments router link pour la navigation.
+Sur le view d’Accueil, il n’y a pas de simulation login mais un hook est fait pour montrer une partie du texte et des coordonnées si le booléen est true.
+Il n’y a pas un button de changement de langue, mais le mixin est fait si jamais il existe le besoin. 
+Sur le view Projet, nous allons t trouver une liste de 3 projets realises, et sur le view contact, il y a un contact form de trois champs et un dropdown.
+Le footer a une directive personnelle avec la date et le copyright. 
+
+Le but de ce projet consiste a montrer nos connaissances sur Vue.js et avec plus d’améliorations, c’est possible de l’utiliser même comme portfolio.
